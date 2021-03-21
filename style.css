@@ -1,0 +1,215 @@
+.animation {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  padding: 12px;
+  background-color: pink;
+  animation-name: round;
+  animation-delay: 5s;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  margin-left: 10px;
+}
+
+.second {
+  animation-direction: reverse;
+}
+
+.flex {
+  display: flex;
+}
+
+p {
+  margin: 40px 15px;
+}
+
+.display {
+  margin: -125px 0px 0px 1057px;
+  display: flex;
+}
+
+
+.third {
+  animation: right .1s 5s linear forwards infinite;
+}
+
+.forth {
+  animation: right .1s 5s linear forwards infinite;
+}
+
+.color {
+  animation: color 2s 5s linear forwards infinite;
+  margin: -122px 0px 0px 558px;
+}
+
+.bounce {
+  margin: 50px 558px;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  padding: 12px;
+  background-color: black;
+  animation: drop 1s 5s linear forwards reverse infinite;
+}
+
+.bounce-animation {
+  margin-top: -45px;
+}
+
+hr {
+  margin-top: 180px;
+}
+
+.round-bounce {
+  margin: -134px 0;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  padding: 12px;
+  background-color: rgb(54, 243, 101);
+  animation: round-bounce 10s 5s linear infinite;
+}
+
+.round-bounce-right {
+  margin-top: 10px;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  padding: 12px;
+  background-color: rgb(54, 243, 101);
+  animation: round-bounce-right 10s 5s linear infinite;
+}
+
+.style {
+  height: 100px;
+  width: 100px;
+  padding: 12px;
+  background-color: rgb(217, 219, 80);
+  margin-left: 10px;
+  border-radius: 50%;
+}
+
+p {
+  margin: 40px 15px;
+}
+
+.first {
+  display: flex;
+  margin-top: 20px;
+  transform: translateY(60px);
+}
+
+.ball-round {
+  animation: ball-round 1s 5s ease forwards infinite;
+}
+
+.para {
+  animation: text-round 1s 5s ease forwards infinite;
+}
+
+.secondF {
+  display: flex;
+  margin-top: -125px;
+  float: right;
+  margin-right: 10px;
+  transform: translateY(60px);
+}
+
+.ball-round-second {
+  animation: ball-round 0.2s 5s linear forwards infinite;
+}
+
+.paragraph {
+  animation: text-round 0.3s 5s linear forwards infinite;
+}
+
+@keyframes round{
+  from{
+    background-color: pink;
+    transform: rotateZ(0);
+  }
+  to{
+    background-color: salmon;
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes right {
+  from{
+    background-color: pink;
+    transform: rotateZ(0deg);
+  }
+  to{
+    transform: rotateZ(360deg);
+    background-color: salmon;
+  }
+}
+
+@keyframes color {
+  0%{background: green;}
+  10%{background: yellow;}
+  20%{background: blue;}
+  30%{background: red;}
+  40%{background: rgb(9, 226, 255);}
+  50%{background: rgb(118, 0, 228);}
+  60%{background: rgb(145, 255, 0);}
+  80%{background: rgb(236, 0, 91);}
+  90%{background: rgb(0, 255, 0);}
+  100%{background: rgb(10, 9, 78);}
+}
+
+@keyframes drop {
+  0%{transform: translateY(0px);}
+  10%{background-color: black;}
+  20%{background-color: black;}
+  30%{background-color: black;}
+  40%{background-color: black;}
+  50%{transform: translateY(180px); background-color: rgb(0, 255, 0);}
+  100%{transform: translateY(0px); background-color: rgb(0, 255, 0);}
+}
+
+@keyframes ball-round {
+  from{transform: rotateY(0deg); background-color: rgb(217, 219, 80);}
+  to{transform: rotateY(360deg); background-color: rgb(255, 210, 60);}
+}
+
+@keyframes text-round {
+  from{transform: rotateY(0deg);}
+  to{transform: rotateY(360deg);}
+}
+
+@keyframes round-bounce {
+  0%{transform: translate(0px);}
+  10%{transform: translate(65px, -65px); background-color: rgb(0, 255, 0);}
+  20%{transform: translate(130px, 0px); background-color: coral;}
+  30%{transform: translate(195px, -65px); background-color: coral;}
+  40%{transform: translate(260px, 0px); background-color: rgb(40, 230, 2);}
+  50%{transform: translate(325px, -65px); background-color: rgb(40, 230, 2);}
+  60%{transform: translate(385px, 0px); background-color: cyan;}
+  70%{transform: translate(450px, -65px); background-color: cyan;}
+  72%{transform: translate(441.5px, -65px); background-color: cyan;}
+  80%{transform: translate(325px, 0px); background-color: rgb(132, 0, 255);}
+  90%{transform: translate(200px, -65px); background-color: rgb(132, 0, 255);}
+  95%{transform: translate(100px, 0px); background-color: rgb(187, 255, 0);}
+  100%{transform: translate(0px, 0px); background-color: rgb(187, 255, 0);}
+}
+
+@keyframes round-bounce-right {
+  0%{transform: translate(1200px);}
+  10%{transform: translate(1165px, -65px); background-color: rgb(0, 255, 0);}
+  20%{transform: translate(1100px, 0px); background-color: coral;}
+  30%{transform: translate(1035px, -65px); background-color: coral;}
+  40%{transform: translate(970px, 0px); background-color: rgb(40, 230, 2);}
+  50%{transform: translate(905px, -65px); background-color: rgb(40, 230, 2);}
+  60%{transform: translate(840px, 0px); background-color: cyan;}
+  70%{transform: translate(775px, -65px); background-color: cyan;}
+  75%{transform: translate(710px, 0px); background-color: rgb(132, 0, 255);}
+  80%{transform: translate(675px, -65px); background-color: rgb(132, 0, 255);}
+  83%{transform: translate(680px, -65px); background-color: rgb(132, 0, 255);}
+  85%{transform: translate(720px, 0px); background-color: rgb(187, 255, 0);}
+  90%{transform: translate(805px, 0px); background-color: rgb(187, 255, 0);}
+  92%{transform: translate(900px, 0px); background-color: rgb(20, 147, 185);}
+  94%{transform: translate(1000px, 0px); background-color: rgb(20, 147, 185);}
+  96%{transform: translate(1100px, 0px); background-color: rgb(20, 147, 185);}
+  100%{transform: translate(1200px, 0px); background-color: rgb(20, 147, 185);}
+}
